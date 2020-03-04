@@ -2,6 +2,75 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO */
+.navbar-brand {
+    margin: 10px 15px 10px;
+}
+
+.logo_img {
+    padding: 5px;
+}
+
+.logo_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logo_text-osf {
+    color: #011847;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 6.33px;
+}
+
+.logo_text-academy {
+    color: #84bc22;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* NAVIGATION */
+.nav-tabs {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+}
+
+.nav-item-active, .nav-item:hover {
+    background-color: #262a32;
+    color: #ffffff;
+}
+
+.dropdown-toggle, .nav-link {
+    color: #45413e;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.dropdown-sm {
+    opacity: 0.5;
+    color: #45413e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+
 .services {
     width: 1200px;
     height: 400px;
@@ -17,3 +86,9 @@ body {
     font-weight: 400;
     line-height: 31px;
 }
+
+.btn {
+    margin: 10px;
+}
+
+a { text-decoration: none; }
