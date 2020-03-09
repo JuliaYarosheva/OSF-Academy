@@ -206,7 +206,7 @@ hr {
     height: 36px;
     border: 2px solid #d7d7d7;
     border-radius: 25px;
-    padding: 0;
+    padding: 0 0 0 15px;
 }
 
 .modal-footer button {
