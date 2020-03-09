@@ -1,0 +1,35 @@
+/* LOGO */
+.navbar-brand {
+    margin: 5px;
+}
+
+.logo_img {
+    padding: 5px;
+    width: 63px;
+    height: 65px;
+}
+
+.logo_text {
+    max-height: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.logo_text-osf {
+    color: #011847;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 6.33px;
+}
+
+.logo_text-academy {
+    color: #84bc22;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+}
