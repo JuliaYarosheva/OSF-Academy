@@ -91,13 +91,6 @@ body {
     padding: 30px;
 }
 
-
-
-.btn {
-    margin: 5px;
-    padding: 5px;
-}
-
 .btn_menu {
     display: flex;
     justify-content: flex-end;
@@ -252,7 +245,7 @@ hr {
 .show-password {
     position: absolute;
     bottom: 9px;
-    right: 9px;
+    right: 12px;
     border: none;
     background-color: #ffffff;
 }

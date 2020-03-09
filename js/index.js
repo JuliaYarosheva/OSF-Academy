@@ -1,7 +1,8 @@
 const elements = {
     copyright: document.querySelector('.copyright'),
     showPasswordBtn: document.querySelector('.show-password'),
-    passInput: document.getElementById('defaultForm-pass')
+    passInput: document.getElementById('defaultForm-pass'),
+    loginBtn: document.querySelector('.btn-default')
 };
 
 // Show Password Button
@@ -20,6 +21,23 @@ const showPassword = () => {
 };
 
 elements.showPasswordBtn.addEventListener('click', showPassword);
+
+
+// Password validation
+
+const validatePass = () => {
+    const input = elements.passInput.value;
+    const check = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\\w\\s]).{6,}$/;
+
+    if (input.match(check)) {
+        alert `You logged in!`;
+
+    } else {
+        alert `Password must contain at least 6 characters, 1 numeric, 1 uppercase letter, 1 special character.`
+    }
+};
+
+elements.loginBtn.addEventListener('click', validatePass);
 
 // Copyright
 const copyrightYear = () => {
