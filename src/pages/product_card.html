@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/logo.css">
+    <link rel="stylesheet" href="../css/404_page.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         <div class="row justify-content-between align">
             <div class="col">
                 <a href="../index.html" class="navbar-brand d-flex">
-                    <img class="logo_img" src="../../images/header/logo.png" alt="Logo">
+                    <img class="logo_img" src="../../static/images/header/logo.png" alt="Logo">
                     <div class="logo_text">
                         <span class="logo_text-osf">OSF</span>
                         <span class="logo_text-academy">Academy</span>
@@ -29,7 +30,7 @@
                 <nav class="navbar navbar-expand-xl">
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="nav">
-                            <li class="nav-item nav-link dropdown" data-toggle="dropdown">Services<img class="dropdown-arrow" src="../../images/header/arrow.png" alt="arrow">
+                            <li class="nav-item nav-link dropdown" data-toggle="dropdown">Services<img class="dropdown-arrow" src="../../static/images/header/arrow.png" alt="arrow">
                                 <div class="dropdown-menu">
                                     <div class="row services d-flex align-items-start no-gutters">
                                         <div class="col-xl-2">
@@ -83,7 +84,7 @@
                                             </ul>
                                         </div>
                                         <div class="col-xl-3 offset-xl-1 d-flex align-self-center">
-                                            <img src="../../images/header/girlpic.png" width="271" height="276" alt="girlpic">
+                                            <img src="../../static/images/header/girlpic.png" width="271" height="276" alt="girlpic">
                                         </div>
                                     </div>
                                 </div>
@@ -91,100 +92,135 @@
                             <li class="nav-item nav-link">Company</li>
                             <li class="nav-item nav-link">Library</li>
                             <li class="nav-item nav-link">Contact Us</li>
-                            <li class="nav-item nav-link">EN<img class="dropdown-arrow" src="../../images/header/arrow.png" alt="arrow"></li>
-                            <li class="nav-item nav-link">$ US<img class="dropdown-arrow" src="../../images/header/arrow.png" alt="arrow"></li>
+                            <li class="nav-item nav-link">EN<img class="dropdown-arrow" src="../../static/images/header/arrow.png" alt="arrow"></li>
+                            <li class="nav-item nav-link">$ US<img class="dropdown-arrow" src="../../static/images/header/arrow.png" alt="arrow"></li>
                         </ul>
                     </div>
                 </nav>
             </div>
             <div class="col d-flex btn_menu">
                 <button class="btn btn_search">
-                    <img src="../../images/header/search.png" class="nav-icon-img" alt="Search">
+                    <img src="../../static/images/header/search.png" class="nav-icon-img" alt="Search">
                 </button>
                 <button class="btn btn_login" data-toggle="modal" data-target="#modalLoginForm">
-                    <img src="../../images/header/login.png" class="nav-icon-img" alt="Login">
+                    <img src="../../static/images/header/login.png" class="nav-icon-img" alt="Login">
                 </button>
                 <button class="btn btn_heart">
-                    <img src="../../images/header/heart.png" class="nav-icon-img" alt="Wish_List">
+                    <img src="../../static/images/header/heart.png" class="nav-icon-img" alt="Wish_List">
                 </button>
                 <a href="cart.html">
                     <button class="btn btn_bag">
-                        <img src="../../images/header/bag.png" class="nav-icon-img" alt="Cart">
+                        <img src="../../static/images/header/bag.png" class="nav-icon-img" alt="Cart">
                     </button>
                 </a>
             </div>
         </div>
-        <hr>
     </div>
 </header>
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-xl-12">
-            <h1>Product Card</h1>
-        </div>
+    <div class="row">
+        <h1>Product Detail Page</h1>
     </div>
 </div>
-<footer>
+<footer class="mt-5">
     <div class="container">
-        <div class="row justify-content-center no-gutters">
-            <div class="col-xl-2">
-                <span class="copyright"></span>
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-2 info">
+                <div class="info_copyright"></div>
                 <h3>Contact</h3>
-                <span>Headquarters: 5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6 </span>
-                <span>contact@osf-global.com</span>
-                <span>+1 (888) 548-4344</span>
+                <div>Headquarters: 5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6 </div>
+                <div class="info_mailto"><a href="mailto:contact@osf-global.com">contact@osf-global.com</a></div>
+                <div class="info_callto"><a href="tel:+18885484344">+1 (888) 548-4344</a></div>
             </div>
-            <div class="col-xl-7 offset-xl-1 d-flex no-gutters">
+            <div class="col-xl-8 d-flex">
                 <div class="col-xl-3">
                     <ul class="list-unstyled footer-list">
                         <li class="footer-list-item"><h3>Categories</h3></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Accessories</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Alcohol</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Art</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Books</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Drink</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Electronics</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Accessories</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Alcohol</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Art</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Books</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Drink</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Electronics</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-3 mt-5">
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="404_Page.html">Home</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Jewelry</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Kids & Baby</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Men's Fashion</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Mobile</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Motorcycles</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Movies</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Music</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Home</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Jewelry</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Kids & Baby</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Men's Fashion</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Mobile</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Motorcycles</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Movies</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Music</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-3 mt-5">
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a href="404_Page.html">Sport</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Toys</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Travel</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Women's Fashion</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Sport</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Toys</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Travel</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Women's Fashion</a></li>
                     </ul>
                 </div>
                 <div class="col-xl-3">
                     <ul class="list-unstyled footer-list">
                         <li class="footer-list-item"><h3>About</h3></li>
-                        <li class="footer-list-item"><a href="404_Page.html">About Us</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Delivery</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Testimonials</a></li>
-                        <li class="footer-list-item"><a href="404_Page.html">Contact</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">About Us</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Delivery</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Testimonials</a></li>
+                        <li class="footer-list-item"><a href="../pages/404_Page.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-xl-2 d-flex justify-content-center">
-                <a href="#"><img class="social-icon-img" src="../../images/footer/facefook.png" alt="facebook"></a>
-                <a href="#"><img class="social-icon-img" src="../../images/footer/google.png" alt="google"></a>
-                <a href="#"><img class="social-icon-img" src="../../images/footer/twitter.png" alt="twitter"></a>
-                <a href="#"><img class="social-icon-img" src="../../images/footer/pinterest.png" alt="pinterest"></a>
+                <a href="https://uk-ua.facebook.com/"><img class="social-icon-img" src="../../static/images/footer/facefook.png" alt="facebook"></a>
+                <a href="https://plus.google.com/"><img class="social-icon-img" src="../../static/images/footer/google.png" alt="google"></a>
+                <a href="https://twitter.com/"><img class="social-icon-img" src="../../static/images/footer/twitter.png" alt="twitter"></a>
+                <a href="https://www.pinterest.com/"><img class="social-icon-img" src="../../static/images/footer/pinterest.png" alt="pinterest"></a>
             </div>
         </div>
     </div>
 </footer>
+<div class="popup-container">
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100">Sign in</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="md-form mb-3">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <label data-error="wrong" data-success="right" for="defaultForm-email">Email</label>
+                        <input type="email" id="defaultForm-email" class="form-control validate d-flex justify-content-center">
+                    </div>
+
+                    <div class="md-form mb-3 password-container">
+                        <i class="fas fa-lock prefix grey-text"></i>
+                        <div class="d-flex justify-content-between">
+                            <label data-error="wrong" data-success="right" for="defaultForm-pass">Password</label>
+                            <a href="#" class="green-label">forgot password</a>
+                        </div>
+                        <input type="password" id="defaultForm-pass" class="form-control validate d-flex justify-content-center">
+                        <button class="show-password">
+                            <img src="../../static/images/popup/eye.png" alt="eye">
+                        </button>
+                    </div>
+
+                </div>
+                <div class="modal-footer justify-content-center align-items-center">
+                    <button class="btn btn-default mb-3">Login</button>
+                    <a href="#" class="green-label">I don’t have an account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="../js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

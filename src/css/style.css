@@ -17,23 +17,18 @@ body {
 .navbar {
     padding: 0;
 }
-.nav-tabs {
-    display: flex;
-    align-items: center;
-    border: none;
-}
 
 .nav-item {
     color: #45413e;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 .nav-item-active, .dropdown:hover {
      background-color: #262a32;
      color: #ffffff;
-     cursor: pointer;
     position: relative;
  }
 
@@ -44,8 +39,8 @@ body {
     width: 100%;
     height: 20px;
     left: 0;
-    border-bottom: 2px solid #84bc22;
-    bottom: -20px;
+    border-bottom: 3px solid #84bc22;
+    bottom: -10px;
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -76,14 +71,14 @@ body {
 }
 
 .services {
-    width: 1200px;
+    width: 1280px;
     position: absolute;
-    left: -300px;
-    top: 20px;
+    left: -330px;
+    top: 10px;
     background-color: #262a32;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 .btn_menu {
@@ -100,17 +95,14 @@ a, a:hover {
     transition: 0.2s;
 }
 
-
-
 h3 {
-    width: 24%;
     font-size: 13px;
     font-weight: 800;
     text-transform: uppercase;
-    padding: 10px 0;
+    padding: 15px 5px;
+    margin: 0;
+    color: #ffffff;
 }
-
-/* color: #333333; */
 
 .nav-icon-img {
     padding: 10px;
@@ -125,13 +117,6 @@ h3 {
     padding: 5px;
     opacity: 0.7;
 }
-
-/* refactor styles */
-
-hr {
-    margin: 0;
-}
-/* refactor styles */
 
 .dropdown-menu li>a {
     transition: background-color .2s;
@@ -160,10 +145,18 @@ hr {
     position: relative;
 }
 
+.carousel-img {
+    width: 100%;
+}
+
 .carousel-caption {
     flex-direction: column;
     position: absolute;
     top: 200px;
+}
+
+.carousel-indicators {
+    align-items: center;
 }
 
 .carousel-indicators li {
@@ -175,15 +168,23 @@ hr {
     margin: 7px;
 }
 
+.carousel-indicators li.active {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
 .btn_view-more {
-    width: 147px;
-    height: 36px;
+    width: 150px;
+    height: 40px;
     border: 2px solid #ffffff;
     border-radius: 25px;
     color: #ffffff;
     opacity: 0.5;
     text-transform: uppercase;
-    padding: 10px 0;
+    line-height: 1;
 }
 
 .summer_sales {
@@ -191,19 +192,22 @@ hr {
     height: 334px;
     background-image: url("../../static/images/summerSales/Holidays.png");
     background-repeat: no-repeat;
+    background-position: 0 100%;
     background-color: #84bc22;
     border: 1px solid #84bc22;
     color: #ffffff;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .summer_sales-h2 {
     font-size: 100px;
     font-weight: 900;
+    padding: 10px;
+    margin-top: 30px;
 }
 
 .summer_sales-h4 {
@@ -211,6 +215,8 @@ hr {
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
 
 .follow {
@@ -224,6 +230,67 @@ hr {
     border-radius: 25px;
     color: #3a5b96;
     text-transform: uppercase;
+}
+
+.popular-items_h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    position: relative;
+    padding: 25px;
+}
+
+.popular-items_h2:before,
+.popular-items_h2:after {
+    content: '';
+    height: 2px;
+    background-color: #ffffff;
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 35vw;
+}
+
+.popular-items_h2:before {
+    left: 15vw;
+}
+
+.popular-items_h2:after {
+    right: 15vw;
+}
+
+.popular-item_inner-content {
+    position: relative;
+    height: 365px;
+    width: 270px;
+}
+
+
+.popular-item-name {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    height: 98px;
+    color: #45413e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 15px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    bottom: 8px;
+}
+
+.btn_load-more {
+    width: 260px;
+    height: 40px;
+    border: 2px solid #e8e2d6;
+    border-radius: 25px;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin: 25px;
 }
 
 .banner {
@@ -295,18 +362,33 @@ h4 {
     right: -19vw;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+
+    top: -3px;
+}
+
+.carousel-control-prev {
+    left: 18vw;
+}
+
+.carousel-control-next {
+    right: 18vw;
+}
+
 .product-item {
-    border-radius: 8px;
-    height: 296px;
-    width: 270px;
     margin: 10px;
 }
 
-.product-img {
-
+.product-item_inner-content {
+    position: relative;
+    height: 296px;
+    width: 270px;
 }
 
+
 .product-name {
+    border-top: 1px solid #ffffff;
     background-color: #ffffff;
     height: 98px;
     color: #45413e;
@@ -314,6 +396,10 @@ h4 {
     font-weight: 400;
     line-height: 18px;
     padding: 15px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .line {
