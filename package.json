@@ -1,0 +1,19 @@
+{
+  "name": "osf-academy",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaYarosheva/OSF-Academy.git"
+  },
+  "author": "Julia Yarosheva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaYarosheva/OSF-Academy/issues"
+  },
+  "homepage": "https://github.com/JuliaYarosheva/OSF-Academy#readme"
+}

@@ -1,5 +1,8 @@
+//import ddd from "../mockData/popularProductsData";
+
+
 const elements = {
-    copyright: document.querySelector('.copyright'),
+    copyright: document.querySelector('.info_copyright'),
     showPasswordBtn: document.querySelector('.show-password'),
     passInput: document.getElementById('defaultForm-pass'),
     loginBtn: document.querySelector('.btn-default')
