@@ -12,5 +12,10 @@ export const elements = {
     likeInd: $('.like_indicator'),
     cartInd: $('.cart_indicator'),
     loadMore: $('.btn_load-more'),
-    productList: $('.product-list')
+    productList: $('.product-list'),
+    moreLessBtns: $('.numOf'),
+    addToCart: $('.btn_add-to-cart'),
+    numProducts: $('.quantity'),
+    productDetailsPar: $('.product-details-p'),
+    readMoreBtn: $('.btn_read-more')
 };

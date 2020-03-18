@@ -46,10 +46,6 @@ const LoadMoreModule = function () {
                             <a href="pages/product_card.html"><h6>${item.name}</h6></a>
                             <a href="pages/product_card.html"><h6 class="price">$ ${item.price}</h6></a>
                         </div>
-                        <div class="product-item-hover d-flex justify-content-around align-items-center">
-                            <button class="btn btn_add"><img src="../static/images/hover/plus.png" alt="plus"></button>
-                            <button class="btn btn_like"><img src="../static/images/hover/heart.png" alt="heart"></button>
-                        </div>
                     </div>
                 </div>`
         )
