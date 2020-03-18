@@ -84,13 +84,13 @@
     background-color: #ffffff;
 }
 
-.white-background {
+.background-404 {
     background-repeat: no-repeat;
     background-image: url(../../static/images/404/Exclamation_Mark.png);
     background-position: -5% 50%;
     background-color: #ffffff;
     padding: 60px;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 .h2 {

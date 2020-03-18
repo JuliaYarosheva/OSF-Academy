@@ -6,6 +6,11 @@
     background-color: #45413e;
 }
 
+.white-background {
+    background-color: #ffffff;
+    padding: 0;
+}
+
 .mt-50 {
     margin-top: 50px;
 }
