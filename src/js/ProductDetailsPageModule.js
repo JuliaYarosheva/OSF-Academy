@@ -2,6 +2,22 @@ import { elements} from "./elements";
 
 const ProductDetailsPageModule = function () {
 
+    // Enlarge selected image
+
+const enlargeImage = (click) => {
+
+    let source = click.target.src;
+
+    let sourceArr = source.split('-');
+
+   elements.largeImg[0].src = `${sourceArr[0]}.jpg`;
+};
+
+    elements.smallImg.each((index, elem) => {
+        elem.addEventListener('click', enlargeImage);
+    });
+
+
     // Decrease/Increase Products Quantity
     elements.moreLessBtns[0].addEventListener('click', e => {
         let numProds = parseInt(elements.numProducts[0].value);

@@ -13,6 +13,8 @@ export const elements = {
     cartInd: $('.cart_indicator'),
     loadMore: $('.btn_load-more'),
     productList: $('.product-list'),
+    smallImg: $('.details-preview_small'),
+    largeImg: $('.details-preview'),
     moreLessBtns: $('.numOf'),
     addToCart: $('.btn_add-to-cart'),
     numProducts: $('.quantity'),
