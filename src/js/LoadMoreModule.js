@@ -12,18 +12,21 @@ const LoadMoreModule = function () {
         });
     };
 
-    const getProducts = () => {
+    const getProducts = (click) => {
+        click.preventDefault();
         let products;
 
         productsAPI(skip)
-            .then(data => {
-                const t = Array.from(data);
-                if (data.length < skip) {
-                    //disable load more button
-                    elements.loadMore.style.visibility = 'hidden';
-                }
+            .then(productsData => {
+                const t = Array.from(productsData);
+
                showProducts(t.splice(skip, take));
                skip += take;
+
+                if (productsData.length <= skip) {
+                    //disable load more button
+                    elements.loadMore[0].style.display = 'none';
+                }
             });
     };
 
@@ -34,17 +37,17 @@ const LoadMoreModule = function () {
             return itemsList.push(getProductMarkup(item))
         });
 
-        elements.productList.append(itemsList)
+        elements.productList.append(itemsList);
     };
 
     const getProductMarkup = (item) => {
         return (
             `<div class="popular-product-item">
                     <div class="popular-item_inner-content">
-                        <a href="pages/product_card.html"><img class="product-img" src="${item.imgUrl}" alt="item"></a>
+                        <a href="productDetailsPage.html"><img class="product-img" src="${item.imgUrl}" alt="item"></a>
                         <div class="col-xl-12 popular-item-name text-center">
-                            <a href="pages/product_card.html"><h6>${item.name}</h6></a>
-                            <a href="pages/product_card.html"><h6 class="price">$ ${item.price}</h6></a>
+                            <a href="productDetailsPage.html"><h6>${item.name}</h6></a>
+                            <a href="productDetailsPage.html"><h6 class="price">$ ${item.price}</h6></a>
                         </div>
                     </div>
                 </div>`

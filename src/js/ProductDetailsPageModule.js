@@ -5,6 +5,14 @@ const ProductDetailsPageModule = function () {
     // Enlarge selected image
 
 const enlargeImage = (click) => {
+    click.preventDefault();
+
+    elements.smallImg.each((index, elem) => {
+        elem.classList.remove('preview_active');
+    });
+
+    click.target.classList.add('preview_active');
+
 
     let source = click.target.src;
 

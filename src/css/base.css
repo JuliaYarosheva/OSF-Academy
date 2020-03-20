@@ -14,3 +14,19 @@
 .mt-50 {
     margin-top: 50px;
 }
+
+header {
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+ }
+
+.btn {
+    padding: 5px;
+}
+
