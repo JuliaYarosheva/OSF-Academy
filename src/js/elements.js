@@ -20,5 +20,6 @@ export const elements = {
     addToCart: $('.btn_add-to-cart'),
     numProducts: $('.quantity'),
     productDetailsPar: $('.product-details-p'),
-    readMoreBtn: $('.btn_read-more')
+    readMoreBtn: $('.btn_read-more'),
+    PRODUCT_MODULE: $('.js-productModule')
 };

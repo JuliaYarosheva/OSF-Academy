@@ -12,5 +12,4 @@ import HeaderModule from "./HeaderModule";
     CopyrightModule();
     LoadMoreModule();
     ProductDetailsPageModule();
-
 })();
