@@ -39,6 +39,9 @@
     width: 59px;
     height: 67px;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 20px 0 10px;
 }
 
@@ -56,6 +59,7 @@
     color: #868380;
     font-size: 14px;
     line-height: 18px;
+    text-align: justify-all;
     padding: 5px;
     margin: 0;
 }

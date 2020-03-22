@@ -6,7 +6,9 @@ const CopyrightModule = function() {
         return new Date().getFullYear();
     };
 
-    elements.copyright[0].textContent = `© Copyright ${copyrightYear()}. All Rights Reserved.`;
+    elements.copyright.each((index, elem) => {
+        elem.textContent = `© Copyright ${copyrightYear()}. All Rights Reserved.`;
+    });
 };
 
 export default CopyrightModule;

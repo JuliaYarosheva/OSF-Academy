@@ -4,6 +4,8 @@ import CopyrightModule from './CopyrightModule';
 import LoadMoreModule from './LoadMoreModule';
 import ProductDetailsPageModule from "./ProductDetailsPageModule";
 import HeaderModule from "./HeaderModule";
+import CollapserModule from "./CollapserModule";
+import BurgerMenuModule from "./BurgerMenuModule";
 
 (() => {
     HeaderModule();
@@ -12,4 +14,6 @@ import HeaderModule from "./HeaderModule";
     CopyrightModule();
     LoadMoreModule();
     ProductDetailsPageModule();
+    CollapserModule();
+    BurgerMenuModule();
 })();

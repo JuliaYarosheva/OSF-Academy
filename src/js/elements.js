@@ -21,5 +21,10 @@ export const elements = {
     numProducts: $('.quantity'),
     productDetailsPar: $('.product-details-p'),
     readMoreBtn: $('.btn_read-more'),
+    collapsedBtn: $('.collapsed-title'),
+    collapsedArrow: $('.collapsed-arrow'),
+    burgerBtn: $('.burger'),
+    burgerMenu: $('.burger-menu'),
+    navMobile: $('.mobile-nav'),
     PRODUCT_MODULE: $('.js-productModule')
 };
