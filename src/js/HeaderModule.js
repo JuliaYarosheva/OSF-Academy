@@ -2,13 +2,13 @@ import { elements} from "./elements";
 
 const HeaderModule = function () {
 
-    const sticky = elements.header[0].offsetTop;
+    const sticky = elements.desktopHeader[0].offsetTop;
 
     const stickyHeader = () => {
         if (window.pageYOffset > sticky) {
-            elements.header[0].classList.add("sticky");
+            elements.desktopHeader[0].classList.add("sticky");
         } else {
-            elements.header[0].classList.remove("sticky");
+            elements.desktopHeader[0].classList.remove("sticky");
         }
     };
 

@@ -16,6 +16,12 @@ body {
 
 /* NAVIGATION */
 
+.desktop-header {
+    background-color: #ffffff;
+    z-index: 1;
+    margin: 0 auto;
+}
+
 .navbar {
     padding: 0;
 }
@@ -311,13 +317,12 @@ a, a:hover {
 .popular-item_inner-content {
     position: relative;
     height: 325px;
-    width: 240px;
     margin: 0 10px;
     color: #262a32;
 }
 
 .product-img {
-    width: 240px;
+    width: 100%;
     height: 75%;
 }
 
@@ -561,12 +566,8 @@ a, a:hover {
     width: 100%;
 }
 
-.placeholder {
-    position: relative;
-}
-
 .like_indicator, .cart_indicator {
-    position: absolute;
+    position: relative;
     top: 10px;
     visibility: hidden;
     width: 16px;
@@ -578,6 +579,10 @@ a, a:hover {
     font-size: 12px;
     text-align: center;
     line-height: 1;
+}
+
+.placeholder {
+    position: absolute;
 }
 
 .details_popular-items {
@@ -607,12 +612,13 @@ a, a:hover {
     right: -30vw;
 }
 
-.details-header, .services-header {
+.details-header, .categories-header {
     background-color: #f1edea;
     color: #45413e;
     font-size: 48px;
     font-weight: 900;
     position: relative;
+    text-align: center;
 }
 
 .details-header:before,
@@ -780,15 +786,21 @@ input::-webkit-inner-spin-button {
 
 /* Category Landing Page */
 
+.breadcrumb {
+    justify-content: center;
+}
+
 .categories-wrapper {
-    width: 1010px;
-    border-radius: 7px;
+    width: 97%;
+    border-radius: 8px;
     padding: 25px 45px;
 }
 
 .categories {
     padding: 10px;
     margin: 15px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .label {
@@ -838,8 +850,8 @@ input::-webkit-inner-spin-button {
 .color-7 {background-color: #dc041d;}
 .color-8 {background-color: #efead7;}
 
-.services-header:before,
-.services-header:after {
+.categories-header:before,
+.categories-header:after {
     content: '';
     height: 2px;
     background-color: #ffffff;
@@ -849,24 +861,26 @@ input::-webkit-inner-spin-button {
     width: 25vw;
 }
 
-.services-header:before {
+.categories-header:before {
     left: -30vw;
 }
 
-.services-header:after {
+.categories-header:after {
     right: -30vw;
 }
 
-.services_load-more {
+.categories_load-more {
     width: 150px;
     background-color: #84bc22;
     border: 2px solid #e8e2d6;
     font-size: 14px;
     text-align: center;
+    margin: 55px 25px 20px;
 }
 
 .product-list {
     display: flex;
     justify-content: start;
     align-self: center;
+    flex-wrap: wrap;
 }

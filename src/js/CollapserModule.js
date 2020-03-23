@@ -5,19 +5,11 @@ const CollapserModule = function() {
     // Collapser
 
     const handleCollapse = (event) => {
-        const currElement = $(event.currentTarget);
 
-        currElement[0].nextElementSibling.classList.toggle('content-closed');
-        //el.childNodes[2].style = 'transform: rotate(180deg)';
+        const currElement = $(event.currentTarget.closest('.collapsed-item'));
 
-        // if (el.matches('.collapsed-title')) {
-        //     el.nextElementSibling.classList.toggle('content-closed');
-        //     el.childNodes[2].style = 'transform: rotate(180deg)';
-        //
-        // } else if (el.matches('.collapsed-item')) {
-        //     el.childNodes[3].classList.toggle('content-closed');
-        //     el.childNodes[1].childNodes[2].style = 'transform: rotate(180deg)';
-        // }
+        currElement[0].classList.toggle('closed');
+        currElement[0].classList.toggle('open');
     };
 
     $('.collapsed-title').each((index, elem) => {

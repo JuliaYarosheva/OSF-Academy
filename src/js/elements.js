@@ -1,7 +1,8 @@
 import $ from "jquery";
 
 export const elements = {
-    header: $('header'),
+    bodyTag: $('body'),
+    desktopHeader: $('.desktop-header'),
     copyright: $('.info_copyright'),
     showPasswordBtn: $('.show-password'),
     passInput: $('#defaultForm-pass'),
