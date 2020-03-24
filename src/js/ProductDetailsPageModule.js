@@ -2,7 +2,7 @@ import { elements} from "./elements";
 
 const ProductDetailsPageModule = function () {
     // check is product module
-if (elements.PRODUCT_MODULE.length === 0) return;
+//if (elements.PRODUCT_MODULE.length === 0) return;
     // Enlarge selected image
 
 const enlargeImage = (click) => {

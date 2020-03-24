@@ -12,7 +12,7 @@ import BurgerMenuModule from "./BurgerMenuModule";
     IndicatorModule();
     PasswordModule();
     CopyrightModule();
-    LoadMoreModule();
+    //LoadMoreModule();
     ProductDetailsPageModule();
     CollapserModule();
     BurgerMenuModule();
