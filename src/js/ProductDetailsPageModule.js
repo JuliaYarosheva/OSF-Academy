@@ -28,7 +28,7 @@ const enlargeImage = (click) => {
 
 
     // Decrease/Increase Products Quantity
-    elements.moreLessBtns[0].addEventListener('click', e => {
+    const incDecQuantity = (e) => {
         let numProds = parseInt(elements.numProducts[0].value);
 
         if (e.target.matches('.dec')) {
@@ -46,7 +46,9 @@ const enlargeImage = (click) => {
             numProds += 1;
             elements.numProducts[0].value = numProds;
         }
-    });
+    };
+
+    elements.moreLessBtns[0].addEventListener('click', incDecQuantity);
 
     //Add to Cart
 
@@ -56,9 +58,14 @@ const enlargeImage = (click) => {
 
         numItems += numProds;
 
-        elements.cartInd[0].style.visibility = numItems > 0 ? 'visible' : 'hidden';
+        elements.cartInd.each((index, elem) => {
+            elem.style.visibility = numItems > 0 ? 'visible' : 'hidden';
+        });
 
-        elements.cartInd[0].textContent = `${numItems}`;
+        elements.cartInd.each((index, elem) => {
+            elem.textContent = `${numItems}`;
+        });
+
     };
 
     elements.addToCart[0].addEventListener('click', addToCart);
@@ -86,13 +93,24 @@ const enlargeImage = (click) => {
 
     elements.productDetailsPar[0].textContent = `${limitPar()}`;
 
-    const collapsePar = () => {
+    const showText = () => {
 
         elements.productDetailsPar[0].textContent = text;
-
+        elements.readMoreBtn[0].classList.add('btn_read-less');
+        elements.readMoreBtn[0].classList.remove('btn_read-more');
+        console.log(elements.readLessBtn[0].textContent);
+        //elements.readLessBtn[0].textContent = "Read Less";
     };
 
-    elements.readMoreBtn[0].addEventListener('click', collapsePar);
+    // const collapseText = () => {
+    //     elements.productDetailsPar[0].textContent = `${limitPar()}`;
+    //     elements.readLessBtn[0].classList.add('btn_read-more');
+    //     elements.readMoreBtn[0].classList.remove('btn_read-less');
+    //     elements.readMoreBtn[0].textContent = "Read More";
+    // };
+
+    elements.readMoreBtn[0].addEventListener('click', showText);
+    //elements.readLessBtn[0].addEventListener('click', collapseText);
 };
 
 export default ProductDetailsPageModule;

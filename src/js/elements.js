@@ -22,10 +22,16 @@ export const elements = {
     numProducts: $('.quantity'),
     productDetailsPar: $('.product-details-p'),
     readMoreBtn: $('.btn_read-more'),
+    readLessBtn: $('.btn_read-less'),
+    hideCategBtn: $('.btn_hide-categories'),
+    categories: $('.categories-container'),
     collapsedBtn: $('.collapsed-title'),
     collapsedArrow: $('.collapsed-arrow'),
     burgerBtn: $('.burger'),
     burgerMenu: $('.burger-menu'),
     navMobile: $('.mobile-nav'),
+    cookiesModal: $('#myModal55'),
+    closeModalBtn: $('.close55'),
+    acceptCookiesBtn: $('.accept-cookies'),
     PRODUCT_MODULE: $('.js-productModule')
 };

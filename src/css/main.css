@@ -646,19 +646,27 @@ a, a:hover {
 
 .details-container {
     display: flex;
+    flex-direction: row;
     justify-self: center;
     width: 100%;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
-.product-info{
-    padding: 25px 15px 35px;
+.details-preview-container {
+    flex-basis: 50%;
 }
 
 .details-preview {
+    width: 100%;
     padding: 25px 25px 35px;
+}
+
+.product-info{
+    display: flex;
+    width: 50%;
+    padding: 25px 15px 35px;
 }
 
 .details-preview_small {
@@ -682,6 +690,11 @@ a, a:hover {
     font-size: 48px;
     color: #45413e;
     font-weight: 800;
+}
+
+.product-controls {
+    display: flex;
+    margin-bottom: 20px;
 }
 
 .details-tab-container {
@@ -738,7 +751,6 @@ a, a:hover {
     height: 22px;
     border-radius: 50px;
     background-color: #585d61;
-    margin: 5px;
 }
 
 .numOf {
@@ -788,13 +800,17 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
 }
 
-.btn_read-more {
+.btn_read-more, .btn_read-less, .btn_hide-categories {
     border: none;
     background-color: transparent;
     font-size: 16px;
     color: #84bc22;
     padding: 0;
     margin: 15px 0;
+}
+
+.btn_hide-categories {
+    justify-self: center;
 }
 
 .share-wrapper {
@@ -809,13 +825,20 @@ input::-webkit-inner-spin-button {
     justify-content: center;
 }
 
-.categories-wrapper {
+.categories-container {
     width: 97%;
+}
+
+.categories-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
     border-radius: 8px;
     padding: 25px 45px;
+    margin: 0 auto;
 }
 
 .categories {
+    width: 33%;
     padding: 10px;
     margin: 15px 0;
     display: flex;
@@ -869,6 +892,10 @@ input::-webkit-inner-spin-button {
 .color-7 {background-color: #dc041d;}
 .color-8 {background-color: #efead7;}
 
+.categories-header {
+    margin-bottom: 40px;
+}
+
 .categories-header:before,
 .categories-header:after {
     content: '';
@@ -902,4 +929,77 @@ input::-webkit-inner-spin-button {
     justify-content: start;
     align-self: center;
     flex-wrap: wrap;
+}
+
+/*COOKIES*/
+
+/* The Modal (background) */
+.modal55 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content55 {
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+}
+
+/* The Close Button */
+.close55 {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #262a32;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close55:hover,
+.close55:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cookies-h4 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #84bc22;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.cookies-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #45413e;
+    width: 75%;
+    margin-right: 110px;
+}
+
+.accept-cookies {
+    width: 145px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #84bc22;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    align-self: flex-end;
 }

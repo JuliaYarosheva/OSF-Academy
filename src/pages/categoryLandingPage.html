@@ -193,17 +193,32 @@
                     <li class="breadcrumb-item active">Category Landing Page</li>
                 </ol>
             </nav>
-            <h2 class="categories-header mb-40">Services</h2>
-            <div class="row categories-wrapper d-flex white-background no-gutters mb-4">
-                <div class="col-xl-4 col-sm-12">
-                    <div class="col categories">
+            <h2 class="categories-header">Services</h2>
+            <button class="btn_hide-categories d-block d-md-none">Hide categories</button>
+            <div class="categories-container">
+                <div class="row categories-wrapper white-background mb-4">
+                    <div class="categories">
                         <div class="col-auto label">Price</div>
                         <div class="col selection d-flex justify-content-between">
                             <div>$0.00 - $100.00</div>
                             <img src="../static/images/header/arrow.png" alt="arrow">
                         </div>
                     </div>
-                    <div class="col categories">
+                    <div class="categories">
+                    <div class="col-auto label">Brands</div>
+                    <div class="col selection d-flex justify-content-between">
+                        <div>Ukraine Sport</div>
+                        <img src="../static/images/header/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                    <div class="categories">
+                    <div class="col-auto label">Size</div>
+                    <div class="col selection d-flex justify-content-between">
+                        <div>Small</div>
+                        <img src="../static/images/header/arrow.png" alt="arrow">
+                    </div>
+                </div>
+                    <div class="categories">
                         <div class="col-auto label">Color</div>
                         <div class="colors col d-flex align-items-center">
                             <div class="color color-1 active"></div>
@@ -216,32 +231,14 @@
                             <div class="color color-8"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-sm-12">
-                    <div class="col categories">
-                        <div class="col-auto label">Brands</div>
-                        <div class="col selection d-flex justify-content-between">
-                            <div>Ukraine Sport</div>
-                            <img src="../static/images/header/arrow.png" alt="arrow">
-                        </div>
-                    </div>
-                    <div class="col categories">
+                    <div class="categories">
                         <div class="col-auto label">Sort by</div>
                         <div class="col selection d-flex justify-content-between">
                             <div>Price</div>
                             <img src="../static/images/header/arrow.png" alt="arrow">
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-sm-12">
-                    <div class="col categories">
-                        <div class="col-auto label">Size</div>
-                        <div class="col selection d-flex justify-content-between">
-                            <div>Small</div>
-                            <img src="../static/images/header/arrow.png" alt="arrow">
-                        </div>
-                    </div>
-                    <div class="col categories">
+                    <div class="categories">
                         <div class="col-auto label">Show</div>
                         <div class="col selection d-flex justify-content-between">
                             <div>16 per page</div>
@@ -328,75 +325,77 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_151.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>Kristina Dam Oak Table With Whit Marble</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 799.55</h6></a>
+                        <div class="d-none d-xl-flex flex-xl-wrap">
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_151.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>Kristina Dam Oak Table With Whit Marble</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 799.55</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_152.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>Hay - About A Lounge Chair AAL 93</h6></a>
-                                    <a class="col-xl-6" href="./pages/product_detail_page.html"><h6 class="price">$ 659.55</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_152.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>Hay - About A Lounge Chair AAL 93</h6></a>
+                                        <a class="col-xl-6" href="./pages/product_detail_page.html"><h6 class="price">$ 659.55</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_153.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>Activate Facial Mask and Charcoal Soap</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 129.55</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_153.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>Activate Facial Mask and Charcoal Soap</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 129.55</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_154.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>TORY DESK CALENDAR</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 299.99</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_154.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>TORY DESK CALENDAR</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 299.99</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_155.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>Cocktail Table Walnut | YES</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 410.99</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_155.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>Cocktail Table Walnut | YES</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 410.99</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_156.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>CH445 Wing Chair on SUITE NY</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 330.55</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_156.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>CH445 Wing Chair on SUITE NY</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 330.55</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_9.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>Kristina Dam Oak Table With Whit Marble</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 799.55</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_9.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>Kristina Dam Oak Table With Whit Marble</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 799.55</h6></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popular-product-item">
-                            <div class="popular-item_inner-content">
-                                <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_157.png" alt="item"></a>
-                                <div class="col-xl-12 popular-item-name text-center">
-                                    <a href="./pages/product_detail_page.html"><h6>Hay - About A Lounge Chair AAL 93</h6></a>
-                                    <a href="./pages/product_detail_page.html"><h6 class="price">$ 659.55</h6></a>
+                            <div class="popular-product-item">
+                                <div class="popular-item_inner-content">
+                                    <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_157.png" alt="item"></a>
+                                    <div class="col-xl-12 popular-item-name text-center">
+                                        <a href="./pages/product_detail_page.html"><h6>Hay - About A Lounge Chair AAL 93</h6></a>
+                                        <a href="./pages/product_detail_page.html"><h6 class="price">$ 659.55</h6></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -488,7 +487,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/featuredProducts/3.png" alt="item"></a>
                                         <div class="col-xl-12 popular-item-name text-center">
@@ -497,7 +496,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/featuredProducts/4.png" alt="item"></a>
                                         <div class="col-xl-12 popular-item-name text-center">
@@ -528,7 +527,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_153.png" alt="item"></a>
                                         <div class="col-xl-12 popular-item-name text-center">
@@ -537,7 +536,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_154.png" alt="item"></a>
                                         <div class="col-xl-12 popular-item-name text-center">
@@ -568,7 +567,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_157.png" alt="item"></a>
                                         <div class="col-xl-12 product-name text-center">
@@ -577,7 +576,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_151.png" alt="item"></a>
                                         <div class="col-xl-12 product-name text-center">
@@ -608,7 +607,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_153.png" alt="item"></a>
                                         <div class="col-xl-12 product-name text-center">
@@ -617,7 +616,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="popular-product-item">
+                                <div class="popular-product-item d-none d-xl-block">
                                     <div class="popular-item_inner-content">
                                         <a href="./pages/product_detail_page.html"><img class="product-img" src="../static/images/popularProducts/Layer_154.png" alt="item"></a>
                                         <div class="col-xl-12 product-name text-center">
@@ -634,7 +633,7 @@
         </div>
     </div>
     <footer>
-        <div class="container section d-none d-md-block">
+        <div class="container section d-none d-xl-block">
             <div class="row d-flex justify-content-center">
                 <div class="col-xl-2 info">
                     <div class="info_copyright"></div>
@@ -693,7 +692,7 @@
                 </div>
             </div>
         </div>
-        <div class="container section mobile-footer d-block d-md-none">
+        <div class="container section mobile-footer d-block d-xl-none">
             <div class="row ">
                 <div class="col-sm-12 info_copyright"></div>
                 <div class="col-sm-12 collapsed-item open">
