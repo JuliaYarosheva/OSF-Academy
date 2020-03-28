@@ -8,7 +8,7 @@ const BurgerMenuModule = function() {
         click.preventDefault();
 
         if (isOpen) {
-            elements.burgerMenu[0].style = "left: -380px;";
+            elements.burgerMenu[0].style = "left: -9999px;";
             elements.bodyTag[0].style = 'overflow: auto';
 
             isOpen = false;

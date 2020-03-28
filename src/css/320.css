@@ -1,5 +1,18 @@
 @media (max-width: 320px) {
 
+    .common-container {
+        min-width: 250px;
+        padding: 0 15px;
+    }
+
+    .ml-none {
+        display: none;
+    }
+
+    .common-container {
+        max-width: 320px;
+    }
+
     .section {
         padding: 15px;
     }
@@ -20,6 +33,7 @@
         width: 53px;
         height: 55px;
         padding: 0;
+        margin: 0 auto;
     }
 
     .burger {
@@ -45,7 +59,7 @@
         background-color: #262a32;
         color: #ffffff;
         top: 65px;
-        left: -380px;
+        left: -9999px;
         transition: left .3s;
         z-index: 20;
         padding: 0 10px 25px;
@@ -58,6 +72,10 @@
 
     /*First Section Carousel*/
 
+    .carousel {
+        width: 100%;
+    }
+
     .carousel-indicators {
         bottom: 15px;
     }
@@ -67,19 +85,20 @@
     }
 
     .carousel-img-layer {
-        padding: 30px 20px 90px;
+        padding: 30px 20px;
+        justify-content: flex-start;
     }
 
     .carousel_h5 {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 22px;
+        line-height: 28px;
         width: 100%;
     }
 
     .carousel_p {
         font-size: 14px;
         line-height: 18px;
-        padding-top: 0;
+        padding: 60px 0;
         width: 100%;
     }
 
@@ -92,15 +111,15 @@
 
     .popular-items_h2:before,
     .popular-items_h2:after {
-        width: 19vw;
+        width: 16vw;
     }
 
     .popular-items_h2:before {
-        left: 46vw;
+        left: 45vw;
     }
 
     .popular-items_h2:after {
-        right: 46vw;
+        right: 45vw;
     }
 
     .popular-item_inner-content {
@@ -142,17 +161,22 @@
     }
 
     .banner-h1 {
-        font-size: 29px;
+        font-size: 25px;
     }
 
     .banner-span {
-        font-size: 14px;
+        font-size: 13px;
         width: 100%;
     }
 
     /*Fourth Section Services*/
 
+    .services-wrapper {
+        flex-direction: column;
+    }
+
     .services-item {
+        width: 100%;
         justify-content: space-evenly;
     }
 
@@ -173,6 +197,7 @@
     /*Mobile Navigation*/
 
     .mobile-nav {
+        width: 100%;
         background-color: #262a32;
         border-top: 1px solid #ffffff;
         position: fixed;
@@ -331,13 +356,17 @@
         margin: 10px auto;
     }
 
+    .details-preview-container {
+        flex-direction: column;
+    }
+
     .product-details {
-        padding: 20px;
+        padding: 10px 20px;
     }
 
     .product-info {
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
         padding: 10px;
     }
 
@@ -350,7 +379,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-bottom: 15px;
+        padding: 0;
     }
 
     .details-preview_small {
@@ -379,5 +408,9 @@
 
     .btn_read-more {
         margin: 5px 0 15px;
+    }
+
+    .details-page li {
+        background-color: #262a32;
     }
 }

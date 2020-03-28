@@ -3,5 +3,6 @@
 @import "logo.css";
 @import "base.css";
 @import "404_page.css";
-@import "xs_style.css";
-@import "md_style.css";
+@import "320.css";
+@import "320-767.css";
+@import "768-1279.css";

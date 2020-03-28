@@ -10,14 +10,14 @@ import CategoriesModule from "./CategoriesModule";
 import CookieModule from "./CookieModule";
 
 (() => {
-    CookieModule();
+    //CookieModule();
     HeaderModule();
     IndicatorModule();
     PasswordModule();
     CopyrightModule();
-    LoadMoreModule();
+    //LoadMoreModule();
     ProductDetailsPageModule();
     CollapserModule();
     BurgerMenuModule();
-    CategoriesModule();
+    //CategoriesModule();
 })();
