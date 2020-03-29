@@ -1,8 +1,6 @@
 @media (min-width: 320px) and (max-width: 767px) {
-
     .common-container {
-        min-width: 320px;
-        padding: 0 15px;
+        max-width: 767px;
     }
 
     .ml-none {
@@ -39,6 +37,7 @@
         position: absolute;
         top: 20px;
         left: 0;
+        padding-left: 20px;
     }
 
     .burger>span {
@@ -51,7 +50,7 @@
     .burger-menu {
         position: absolute;
         width: 100%;
-        height: calc(75vh);
+        height: calc(82vh);
         background-color: #262a32;
         color: #ffffff;
         top: 65px;
@@ -63,10 +62,16 @@
     }
 
     .dropdown-img {
-        width: 80%;
+        width: 75%;
+        margin-top: 30px;
+        max-width: 350px;
     }
 
     /*First Section Carousel*/
+
+    .section-1_carousel-slider {
+        width: 100%;
+    }
 
     .carousel {
         width: 100%;
@@ -149,6 +154,7 @@
     /*Third Section Banner*/
 
     .banner {
+        background-repeat: no-repeat;
         background-size: 190%;
         background-position: 75% 50%;
         height: 260px;
@@ -204,6 +210,7 @@
 
     .dark_indicator {
         background-color: #262a32;
+        top: 10px;
     }
 
     .nav-icon-img {
@@ -245,9 +252,10 @@
     /*Copyright*/
 
     .info_copyright {
+        width: 100%;
         font-size: 14px;
         font-weight: 500;
-        padding: 10px 30px;
+        padding: 10px 15px;
     }
 
     .info_p, .info_mailto, .info_callto {
@@ -255,10 +263,6 @@
     }
 
     /*CATEGORY LANDING PAGE*/
-
-    .middle-part {
-        padding: 0 5px;
-    }
 
     .breadcrumb {
         margin: 15px 0 0;
@@ -293,7 +297,7 @@
         width: 100%;
         margin: 3px 0;
         padding: 10px 15px;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .label {
@@ -304,6 +308,10 @@
     .selection {
         max-width: 185px;
         font-size: 14px;
+    }
+
+    .colors {
+        max-width: 185px;
     }
 
     .color {
@@ -358,6 +366,8 @@
     }
 
     .details-preview-container {
+        flex-basis: 100%;
+        width: 100%;
         flex-direction: column;
     }
 
@@ -427,5 +437,32 @@
         border: 3px solid #000000;
         border-radius: 50%;
 
+    }
+
+    /*NOT FOUND PAGE*/
+
+    .container-404 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .left-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 35px;
+    }
+
+    .right-side {
+        width: 100%;
+        padding: 35px;
+    }
+
+    .search {
+        right: 45px;
+        bottom: 40px;
     }
 }

@@ -1,13 +1,20 @@
 import { elements } from './elements';
 
 const CategoriesModule = function() {
+    if (elements.CATEGORIES_MODULE.length !== 0) {
 
-    const hideCategories = () => {
-            console.log('fuck!');
+        let isOpen = false;
 
+        elements.hideCategBtn[0].addEventListener('click', () => {
+
+            if (isOpen) {
+                elements.categories[0].style = 'display: block';
+                isOpen = false;
+            } else {
                 elements.categories[0].style = 'display: none';
-    };
-
-    elements.hideCategBtn[0].addEventListener('click', hideCategories);
+                isOpen = true;
+            }
+        });
+    }
 };
 export default CategoriesModule;

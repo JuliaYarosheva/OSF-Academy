@@ -1,12 +1,13 @@
 import { elements } from './elements';
 
 const CookieModule = function() {
-
     const modal = elements.cookiesModal[0];
     const span = elements.closeModalBtn[0];
+
     span.onclick = function() {
         modal.style.display = "none";
     };
+
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
@@ -18,19 +19,18 @@ const CookieModule = function() {
     }
 
     const acceptCookies = () => {
-        document.cookie = "username=Julia Yarosheva; expires=Thu, 30 Apr 2020 12:00:00 UTC";
+        document.cookie = "username=1; expires=Thu, 30 Apr 2020 12:00:00 UTC";
         modal.style.display = "none";
     };
 
     elements.acceptCookiesBtn[0].addEventListener('click', acceptCookies);
 
     (function () {
-
         //document.cookie = "username= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
         if (!document.cookie) {
+            console.log(typeof(document.cookie));
             window.setTimeout(showModal, 10000);
         }
-
     })();
 };
 

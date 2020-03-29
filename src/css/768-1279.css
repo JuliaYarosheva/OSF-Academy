@@ -1,70 +1,18 @@
 @media (min-width: 768px) and (max-width: 1279px) {
-
     .common-container {
-        min-width: 768px;
-        padding: 0 20px;
+        max-width: 1279px;
+    }
+
+    .section {
+        padding: 20px;
     }
 
     .xl-none {
         display: none;
     }
 
-    /*Header*/
-
-    .mobile-header {
-        position: relative;
-    }
-
-    .navbar-brand {
-        margin: 0 auto;
-    }
-
-    .logo_img {
-        width: 53px;
-        height: 55px;
-        padding: 0;
-    }
-
-    .burger {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        position: absolute;
-        top: 20px;
+    .sticky {
         left: 0;
-    }
-
-    .burger>span {
-        background-color: #262a32;
-        width: 19px;
-        height: 2px;
-        margin: 3px;
-    }
-
-    .burger-menu {
-        position: absolute;
-        width: 100%;
-        height: calc(75vh);
-        background-color: #262a32;
-        color: #ffffff;
-        top: 65px;
-        left: -9999px;
-        transition: left .3s;
-        z-index: 20;
-        padding: 0 10px 25px;
-        overflow-y: scroll;
-    }
-
-    .dropdown-img {
-        width: 80%;
-    }
-
-    .common-container {
-        max-width: 768px;
-    }
-
-    .section {
-        padding: 15px;
     }
 
     .popular-product-item {
@@ -73,7 +21,7 @@
 
     .categories {
         width: 50%;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     .label {
@@ -84,6 +32,10 @@
     .selection {
         max-width: 210px;
         font-size: 17px;
+    }
+
+    .colors {
+        justify-content: flex-start;
     }
 
     .breadcrumb-item {
@@ -133,6 +85,21 @@
 
     .popular-items_h2:after {
         right: 33vw;
+    }
+
+
+    .section-1 {
+        margin: 0 30px;
+        display: block;
+    }
+
+    .section-1_carousel-slider {
+        width: 100%;
+    }
+
+    .section-1_ad-container {
+        display: flex;
+        margin: 0;
     }
 
     .summer-sales_container {
@@ -229,6 +196,7 @@
     /*Copyright*/
 
     .info_copyright {
+        width: 60%;
         font-size: 14px;
         font-weight: 500;
         padding: 10px 0;
@@ -240,6 +208,29 @@
 
     /*Footer*/
 
+    .footer-container {
+        display: block;
+    }
+
+    .footer-columns {
+        width: 100%;
+    }
+
+    .footer-column {
+        width: 17%;
+        padding: 0 10px;
+    }
+
+    .footer-column-1 {
+        width: 30%;
+    }
+
+    .social-column {
+        width: 100%;
+        padding: 35px 10px 5px;
+        justify-content: center;
+    }
+
     .footer-h3 {
         font-size: 13px;
     }
@@ -247,6 +238,8 @@
     .footer-list-item a {
         font-size: 16px;
     }
+
+
 
     .modal-content {
         width: 475px;
@@ -272,13 +265,15 @@
     }
 
     .details-container {
+        display: block;
         width: 100%;
         margin: 0 auto;
     }
 
     .details-preview-container {
+        width: 70%;
         display: flex;
-        flex-basis: 85%;
+        flex-basis: 100%;
         align-items: center;
         margin: 0 auto;
     }
@@ -294,7 +289,6 @@
     }
 
     .details-preview {
-        width: 100%;
         padding: 25px 10px;
     }
 
@@ -348,5 +342,13 @@
 
     .dark_indicator {
         background-color: #262a32;
+        top: 10px;
+    }
+
+    /*NOT FOUND PAGE*/
+
+    .left-side {
+        justify-content: center;
+        padding-right: 45px;
     }
 }

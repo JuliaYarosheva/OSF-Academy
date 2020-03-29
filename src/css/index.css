@@ -1,8 +1,7 @@
 @import "reset.css";
 @import "main.css";
-@import "logo.css";
 @import "base.css";
-@import "404_page.css";
 @import "320.css";
 @import "320-767.css";
 @import "768-1279.css";
+@import "1280.css";

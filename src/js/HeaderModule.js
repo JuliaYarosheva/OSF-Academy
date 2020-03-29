@@ -1,7 +1,6 @@
 import { elements} from "./elements";
 
 const HeaderModule = function () {
-
     const sticky = elements.desktopHeader[0].offsetTop;
 
     const stickyHeader = () => {

@@ -1,8 +1,6 @@
 import { elements } from './elements';
 
 const BurgerMenuModule = function() {
-
-    // Burger Menu
     let isOpen = false;
     const toggleMenu = (click) => {
         click.preventDefault();

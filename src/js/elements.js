@@ -22,7 +22,8 @@ export const elements = {
     numProducts: $('.quantity'),
     productDetailsPar: $('.product-details-p'),
     readMoreBtn: $('.btn_read-more'),
-    readLessBtn: $('.btn_read-less'),
+    collapseContent: $('.js-collapseContent'),
+    collapseContentBtn: $('.js-collapseContentBtn'),
     hideCategBtn: $('.btn_hide-categories'),
     categories: $('.categories-container'),
     collapsedBtn: $('.collapsed-title'),
@@ -33,5 +34,8 @@ export const elements = {
     cookiesModal: $('#myModal55'),
     closeModalBtn: $('.close55'),
     acceptCookiesBtn: $('.accept-cookies'),
-    PRODUCT_MODULE: $('.js-productModule')
+    PRODUCT_MODULE: $('.js-productModule'),
+    LOAD_MORE_MODULE: $('.js-loadMoreModule'),
+    CATEGORIES_MODULE: $('.js-categoriesModule'),
+    COLLAPSE_CONTENT_MODULE: $('.js-collapseContentModule')
 };

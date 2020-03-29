@@ -4,20 +4,21 @@ import CopyrightModule from './CopyrightModule';
 import LoadMoreModule from './LoadMoreModule';
 import ProductDetailsPageModule from "./ProductDetailsPageModule";
 import HeaderModule from "./HeaderModule";
-import CollapserModule from "./CollapserModule";
+import { CollapserModule, CollapseContentModule } from "./CollapserModule";
 import BurgerMenuModule from "./BurgerMenuModule";
 import CategoriesModule from "./CategoriesModule";
 import CookieModule from "./CookieModule";
 
 (() => {
-    //CookieModule();
+    CookieModule();
     HeaderModule();
     IndicatorModule();
     PasswordModule();
     CopyrightModule();
-    //LoadMoreModule();
+    LoadMoreModule();
     ProductDetailsPageModule();
     CollapserModule();
+    CollapseContentModule();
     BurgerMenuModule();
-    //CategoriesModule();
+    CategoriesModule();
 })();
