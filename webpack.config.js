@@ -71,25 +71,25 @@ module.exports = {
             inject: false,
             hash: true,
             template: './src/pages/productDetailsPage.html',
-            filename: 'productDetailsPage.html'
+            filename: 'pages/productDetailsPage.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
             template: './src/pages/categoryLandingPage.html',
-            filename: 'categoryLandingPage.html'
+            filename: 'pages/categoryLandingPage.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
             template: './src/pages/404Page.html',
-            filename: '404Page.html'
+            filename: 'pages/404Page.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
             template: './src/pages/cartPage.html',
-            filename: 'cartPage.html'
+            filename: 'pages/cartPage.html'
         })
     ],
     resolve: {
