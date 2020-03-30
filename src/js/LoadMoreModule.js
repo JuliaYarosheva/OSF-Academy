@@ -45,7 +45,9 @@ const LoadMoreModule = function () {
             return (
                 `<div class="popular-product-item">
                     <div class="popular-item_inner-content">
-                        <a href="./pages/productDetailsPage.html"><img class="product-img" src="${item.imgUrl}" alt="item"></a>
+                        <a href="./pages/productDetailsPage.html">
+                            <img class="product-img" src="${item.imgUrl}" alt="item">
+                        </a>
                         <div class="col-xl-12 popular-item-name text-center">
                             <a href="./pages/productDetailsPage.html"><h6>${item.name}</h6></a>
                             <a href="./pages/productDetailsPage.html"><h6 class="price">$ ${item.price}</h6></a>

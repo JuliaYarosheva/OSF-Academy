@@ -8,6 +8,7 @@ import { CollapserModule, CollapseContentModule } from "./CollapserModule";
 import BurgerMenuModule from "./BurgerMenuModule";
 import CategoriesModule from "./CategoriesModule";
 import CookieModule from "./CookieModule";
+import ShoppingCartModule from "./ShoppingCartModule";
 
 (() => {
     CookieModule();
@@ -21,4 +22,5 @@ import CookieModule from "./CookieModule";
     CollapseContentModule();
     BurgerMenuModule();
     CategoriesModule();
+    ShoppingCartModule();
 })();
