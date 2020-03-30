@@ -42,11 +42,14 @@ const LoadMoreModule = function () {
         };
 
         const getProductMarkup = (item) => {
+            let root;
+            elements.INDEX_JS_MODULE.length !== 0 ? root = item.imgUrl : root = `../${item.imgUrl}`;
+
             return (
                 `<div class="popular-product-item">
                     <div class="popular-item_inner-content">
                         <a href="./pages/productDetailsPage.html">
-                            <img class="product-img" src="${item.imgUrl}" alt="item">
+                            <img class="product-img" src="${root}" alt="item">
                         </a>
                         <div class="col-xl-12 popular-item-name text-center">
                             <a href="./pages/productDetailsPage.html"><h6>${item.name}</h6></a>
@@ -62,6 +65,3 @@ const LoadMoreModule = function () {
 };
 
 export default LoadMoreModule;
-
-
-

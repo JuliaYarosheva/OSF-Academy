@@ -106,21 +106,7 @@
     /*Second Section Carousel*/
 
     .popular-items_h2 {
-        font-size: 24px;
-        padding: 15px 0;
-    }
-
-    .popular-items_h2:before,
-    .popular-items_h2:after {
-        width: 25vw;
-    }
-
-    .popular-items_h2:before {
-        left: -30vw;
-    }
-
-    .popular-items_h2:after {
-        right: -30vw;
+        padding: 0 25px;
     }
 
     .popular-item_inner-content {
@@ -270,23 +256,16 @@
 
     .details-header, .categories-header {
         font-size: 30px;
+        padding: 0 25px;
     }
 
-    .categories-header {
-        margin-bottom: 10px;
+    .categories-line {
+        position: relative;
+        margin: 50px 0;
     }
 
-    .categories-header:before,
-    .categories-header:after {
-        width: 20vw;
-    }
-
-    .categories-header:before {
-        left: 43vw;
-    }
-
-    .categories-header:after {
-        right: 43vw;
+    .categories-header-wrapper {
+        top: -17px;
     }
 
     .categories-wrapper {
@@ -330,31 +309,17 @@
 
     /*PRODUCT DETAILS PAGE*/
 
-    .details-header {
-        margin-bottom: 20px;
-    }
-
-    .details-header:before,
-    .details-header:after {
-        width: 0;
+    .details-header-wrapper {
+        top: -17px;
     }
 
     .details_popular-items-h2 {
         font-size: 18px;
-        margin: 10px 0;
+        padding: 0 15px;
     }
 
-    .details_popular-items-h2:before,
-    .details_popular-items-h2:after {
-        width: 15vw;
-    }
-
-    .details_popular-items-h2:before {
-        left: -20vw;
-    }
-
-    .details_popular-items-h2:after {
-        right: -20vw;
+    .details_popular-items-h2-wrapper {
+        top: -10px;
     }
 
     .details-container {
@@ -441,6 +406,10 @@
 
     /*NOT FOUND PAGE*/
 
+    .background-404 {
+        padding: 50px 25px;
+    }
+
     .container-404 {
         width: 100%;
         flex-direction: column;
@@ -456,9 +425,17 @@
         padding: 35px;
     }
 
+    .not-found_title {
+        font-size: 70px;
+    }
+
     .right-side {
         width: 100%;
         padding: 35px;
+    }
+
+    .not-found_h2 {
+        font-size: 20px;
     }
 
     .search {
@@ -468,8 +445,8 @@
 
     /*SHOPPING CART PAGE*/
 
-    .shopping-cart-header:before, .shopping-cart-header:after {
-        width: 0;
+    .shopping-cart-header {
+        padding: 0 15px;
     }
 
     .shopping-cart-products {

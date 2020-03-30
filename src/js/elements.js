@@ -43,5 +43,6 @@ export const elements = {
     LOAD_MORE_MODULE: $('.js-loadMoreModule'),
     CATEGORIES_MODULE: $('.js-categoriesModule'),
     COLLAPSE_CONTENT_MODULE: $('.js-collapseContentModule'),
-    SHOPING_CART_MODULE: $('.js-shoppingCartModule')
+    SHOPING_CART_MODULE: $('.js-shoppingCartModule'),
+    INDEX_JS_MODULE: $('.js-index')
 };

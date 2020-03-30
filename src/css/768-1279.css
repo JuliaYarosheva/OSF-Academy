@@ -44,6 +44,7 @@
 
     .categories-header {
         font-size: 42px;
+        padding: 0 25px;
     }
 
     .dropdown-img {
@@ -70,23 +71,6 @@
         padding-top: 25px;
         width: 80%;
     }
-
-    .popular-items_h2 {
-        font-size: 30px;
-    }
-
-    .popular-items_h2:before, .popular-items_h2:after {
-        width: 20vw;
-    }
-
-    .popular-items_h2:before {
-        left: 33vw;
-    }
-
-    .popular-items_h2:after {
-        right: 33vw;
-    }
-
 
     .section-1 {
         margin: 0 30px;
@@ -245,23 +229,13 @@
         width: 475px;
     }
 
-
+    .details-header-wrapper {
+        top: -23px;
+    }
 
     .details-header {
         font-size: 38px;
-    }
-
-    .details-header:before,
-    .details-header:after {
-        width: 5vw;
-    }
-
-    .details-header:before {
-        left: -8vw;
-    }
-
-    .details-header:after {
-        right: -8vw;
+        padding: 0 25px;
     }
 
     .details-container {
