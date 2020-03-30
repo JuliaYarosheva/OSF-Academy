@@ -26,9 +26,7 @@ const CookieModule = function() {
     elements.acceptCookiesBtn[0].addEventListener('click', acceptCookies);
 
     (function () {
-        //document.cookie = "username= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
         if (!document.cookie) {
-            console.log(typeof(document.cookie));
             window.setTimeout(showModal, 10000);
         }
     })();

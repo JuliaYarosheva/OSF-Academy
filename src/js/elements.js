@@ -42,5 +42,6 @@ export const elements = {
     PRODUCT_MODULE: $('.js-productModule'),
     LOAD_MORE_MODULE: $('.js-loadMoreModule'),
     CATEGORIES_MODULE: $('.js-categoriesModule'),
-    COLLAPSE_CONTENT_MODULE: $('.js-collapseContentModule')
+    COLLAPSE_CONTENT_MODULE: $('.js-collapseContentModule'),
+    SHOPING_CART_MODULE: $('.js-shoppingCartModule')
 };
