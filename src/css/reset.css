@@ -47,7 +47,7 @@ table {
     border-spacing: 0;
 }
 
-button:focus {
-    outline:0;
-    box-shadow: 0;
+.btn:focus, button:focus, .btn.focus, button.focus {
+    outline: 0;
+    box-shadow: none;
 }
