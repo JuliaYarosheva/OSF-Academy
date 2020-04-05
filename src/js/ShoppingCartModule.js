@@ -4,26 +4,29 @@ import $ from "jquery";
 const ShoppingCartModule = function() {
 
     if (elements.SHOPING_CART_MODULE.length !== 0) {
+        let subtotalArr;
+        const calcSubtotal = () => {
 
-        calcSubtotal();
-        updateTotal();
-
-        function calcSubtotal() {
-            const subtotalArr = [];
-
+            const arr = [];
             elements.productPriceLarge.each((index, elem) => {
                 const itemPriceArr = elem.textContent.split(' ');
                 const itemPrice = parseFloat(itemPriceArr[1]);
-                subtotalArr.push(itemPrice);
-
+                arr.push(itemPrice);
             });
+
+            return arr;
+        };
+
+        subtotalArr = calcSubtotal();
+
+        const renderSubtotal = () => {
 
             const subtotal = subtotalArr.reduce((a, b) => a + b, 0);
             elements.subtotalValue[0].textContent = `$ ${subtotal.toFixed(2)}`;
             return subtotal;
-        }
+        };
 
-        function updateShipping() {
+        const updateShipping = () => {
 
             let shippingRate;
 
@@ -42,14 +45,14 @@ const ShoppingCartModule = function() {
             }
 
             return shippingRate;
-        }
+        };
 
-        function updateTotal() {
+        const updateTotal = () => {
 
-            calcSubtotal();
-            updateShipping();
-            elements.orderTotal[0].textContent = `$ ${(calcSubtotal() + updateShipping()).toFixed(2)}`;
-        }
+            const subtotal = renderSubtotal();
+            const shipping = updateShipping();
+            elements.orderTotal[0].textContent = `$ ${(subtotal + shipping).toFixed(2)}`;
+        };
 
         elements.moreLessBtns.each((index, elem) => {
             elem.addEventListener('click', updateTotal);
@@ -58,15 +61,31 @@ const ShoppingCartModule = function() {
             elem.addEventListener('click', updateTotal);
         });
 
+        updateTotal();
+
         const deleteProd = (e) => {
 
             let productElement = $(e.target).parent();
             productElement[0].parentNode.removeChild(productElement[0]);
+            removePrice();
+            updateTotal();
+
+            function removePrice() {
+                const elementPriceArr = productElement.find('.product-price-large')[0].textContent.split(' ');
+                const elementPriceString = elementPriceArr[1];
+                const elementPrice = parseFloat(elementPriceString);
+
+                const index = subtotalArr.indexOf(elementPrice);
+                if (index !== -1) {
+                    subtotalArr.splice(index, 1);
+                }
+            }
         };
 
         elements.deleteProduct.each((index, elem) => {
             elem.addEventListener('click', deleteProd);
         });
+
     }
 };
 
